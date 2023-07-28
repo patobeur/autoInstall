@@ -16,7 +16,7 @@ class Installer
 		'mail' => '',
 		'adminname' => '',
 		'adminpassword' => '',
-		'submit' => '',
+		'submit' => 'Install',
 		'defaultDatabaseName' => 'tools',
 		'table' => 'tools_users',
 	];
@@ -271,13 +271,13 @@ class Installer
 	{
 		// Valider les champs requis
 		if (
-			!empty($data['host']) ||
-			!empty($data['username']) ||
-			!empty($data['password']) ||
-			!empty($data['adminname']) ||
-			!empty($data['adminpassword']) ||
-			!empty($data['submit']) ||
-			$data['submit'] === "Save"
+			!empty($data['host']) &&
+			!empty($data['username']) &&
+			!empty($data['password']) &&
+			!empty($data['adminname']) &&
+			!empty($data['adminpassword']) &&
+			!empty($data['submit']) &&
+			$data['submit'] === "Install"
 		) {
 			return true;
 		}
