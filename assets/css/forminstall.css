@@ -1,0 +1,108 @@
+body {
+    transition: background-color 0.3s ease;
+
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.theme-toggle-label {
+    background-color: #ccc;
+}
+
+/* Thème sombre */
+body.dark-theme {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: rgb(255, 210, 210); */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .form-container {
+    background-color: rgb(173, 29, 29);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="mail"],
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.form-container input[type="submit"] {
+    /* width: 100%; */
+    padding: 10px;
+    background-color: #3d7bee;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    width: min-content;
+	font-size: 1rem;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle-label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle-label::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 2px;
+    margin-top: 2px;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle-checkbox:checked + #theme-toggle-label {
+    background-color: #4CAF50;
+}
+
+#theme-toggle-checkbox:checked + #theme-toggle-label::after {
+    transform: translateX(20px);
+}
+
+.theme-toggle-label.dark-theme {
+    background-color: #ff0000;
+}
+.dark-theme #theme-toggle-checkbox {
+    background-color: #4CAF50;
+}
+
+.error {
+    background-color: rgba(255, 161, 161, 0.685);
+}

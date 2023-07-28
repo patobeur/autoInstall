@@ -1,0 +1,78 @@
+
+			* {
+				text-align: center;
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+				/* max-height: 100vh; */
+				height: 100vh;
+			}
+
+			.rendre {
+				background-color: rgb(29, 230, 55);
+			}
+			.merci {
+				background-color: rgb(29, 230, 153);
+			}
+			.default {
+				background-color: rgb(112, 112, 112);
+			}
+			.prendre {
+				background-color: rgb(62, 114, 255);
+			}
+			.erreur {
+				background-color: rgb(247, 126, 12);
+			}
+			.container {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-color: rgba(0, 255, 242, 0.295);
+			}
+
+			h1 {
+				font-size: 6rem;
+				color: white;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			h4 {
+				font-size: 3rem;
+				color: white;
+				margin-bottom: 0;
+				font-style: italic;
+				margin-top: 0;
+			}
+
+			p {
+				font-size: 3rem;
+				color: white;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+			p.date{			
+				font-size: 2rem;
+				margin-top: 0;
+			}
+			p.message{			
+				font-style: italic;	
+				margin-top: 0;
+			}
+			.default section h2 {
+				font-size: 3rem;
+				color: white;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.default section p{			
+				font-style: italic;	
+				margin-top: 0;
+				font-size: 2rem;
+			}

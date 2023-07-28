@@ -1,0 +1,80 @@
+
+* {
+    text-align: left;
+    box-sizing: border-box;
+}
+#container {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    left : calc(50% - (400px /2));
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.brand-logo {
+text-align: center;
+margin: 20px;
+background : url("./assets/img/brand-logo.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:360px;
+}
+
+.brand-logo img {
+    width:360px;
+}
+label {
+    display: block;
+    width:360px;
+    margin: 0px 20px 5px 20px;
+    text-align: left;
+    font-weight: bold;
+    color: #1877f2;
+}
+
+input[type="mail"],
+input[type="text"],
+input[type="password"] {
+    width:360px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    text-align: center;
+    width:360px;
+    padding: 10px;
+    background-color: #1877f2;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    width:360px;
+    margin: 10px 20px 0px 20px;
+}
+
+.brand-icon {
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url('./assets/img/brand-ico.png');
+background-size: cover;
+margin-right: 5px;
+vertical-align: middle;
+}
+form {
+    
+    text-align: center;
+}

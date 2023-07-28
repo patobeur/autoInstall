@@ -1,0 +1,103 @@
+:root {
+  --blu: #0000ff;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 0.7rem;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  position: relative;
+  /* cellspacing:0; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  font-size: 1rem;
+  background: none;
+  border: #ccc 0px solid;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px #d1d1d1;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: azure;
+}
+table a:link {
+  color: #0400ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+table a:visited {
+  color: #0400d4;
+  font-weight: bold;
+  text-decoration: none;
+}
+table :is(a:active, a:hover) {
+  color: #0400d4;
+  text-decoration: underline;
+}
+table tbody tr {
+  text-align: center;
+  padding-left: 5px;
+}
+table tbody tr td {
+  border-spacing: 0;
+  border-collapse: separate;
+  padding: 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff, #fafafa);
+}
+table tbody tr td :first-child {
+  text-align: left;
+  padding-left: 0;
+  border-left: 0;
+}
+table tbody tr td.event {
+  background: var(--palette_02);
+}
+table tbody tr.event {
+  background: var(--blu);
+}
+table tbody tr:first-child th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+table tbody tr:first-child th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+table tbody tr:last-child td {
+  border-bottom: 0;
+}
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+table tbody tr:hover td {
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+table thead,
+table tfoot {
+  padding: 21px 25px 22px 25px;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+table thead tr,
+table tfoot tr {
+  background: #737381;
+}
+table thead tr td,
+table tfoot tr td {
+  text-align: center;
+  background: none;
+  color: white;
+  padding: 3px 2px;
+}/*# sourceMappingURL=table.css.map */
